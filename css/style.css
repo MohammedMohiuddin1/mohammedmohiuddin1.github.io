@@ -637,7 +637,13 @@ h3.my-profession {
     border-radius: 10px;
     padding: 30px 15px;
     text-align: center;
-    transition: all 0.3S ease;
+    transition: all 0.3s ease;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
 .service .service-item .service-item-inner:hover {
@@ -684,6 +690,34 @@ h3.my-profession {
     line-height: 25px;
 }
 
+.frameworks {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    /* Center the items */
+}
+
+.framework-square {
+    padding: 5px 10px;
+    background-color: var(--skin-color);
+    color: var(--bg-black-100);
+    /* Optional background color */
+    border: 1px solid var(--bg-black-100);
+    /* Optional border */
+    border-radius: 5px;
+    /* Optional rounded corners */
+    font-size: 12px;
+    /* Adjust font size as needed */
+    text-align: center;
+    font-weight: bold;
+}
+
+.framework-square:hover {
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+
 /* Portfolio */
 .portfolio .container {
     padding-bottom: 40px;
@@ -719,6 +753,105 @@ h3.my-profession {
     width: 100%;
     display: block;
 }
+
+/*certification section */
+
+.certification .container {
+    padding-bottom: 40px;
+}
+
+.certification-item-inner {
+    display: flex;
+    /* Ensures the content aligns in a row */
+    flex-direction: column;
+    /* Makes the image and text stack in a column */
+    align-items: center;
+    /* Centers the content horizontally */
+    text-align: center;
+    /* Ensures the text aligns centrally */
+}
+
+.cert-logo {
+    width: 200px;
+    /* Adjust the size of the logo */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-bottom: 10px;
+    /* Adds space between the logo and the text */
+}
+
+.certification-heading.padd-15 h2 {
+    margin-bottom: 40px;
+    /* Adjust the value to set the space below the heading */
+}
+
+.certification .certification-item {
+    margin-bottom: 30px;
+    flex: 1 1 32%;
+    /* Allows for three items per row with equal spacing */
+    max-width: 32%;
+    /* Consistent width for all boxes */
+    height: 300px;
+    /* Fixed height for uniformity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    /* Padding won't affect size */
+}
+
+.certification .certification-item .certification-item-inner {
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+    /* Ensures the inner content fills the box */
+    width: 100%;
+    /* Matches the width of the parent box */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Centers content horizontally */
+    box-sizing: border-box;
+    /* Include padding in size */
+}
+
+.certification .certification-item .certification-item-inner:hover {
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.certification .certification-item .certification-item-inner .icon {
+    display: block;
+    margin: 0 auto 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.certification .certification-item .certification-item-inner .icon img {
+    max-width: 100px;
+    height: auto;
+}
+
+.certification .certification-item .certification-item-inner h4 {
+    font-size: 16px;
+    margin-bottom: 0;
+    color: var(--text-black-900);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+/* Adjust flex row for proper alignment and spacing */
+.certification .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* ending certification */
 
 /* contact section */
 .contact-title {

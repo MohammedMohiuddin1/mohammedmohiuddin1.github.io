@@ -35,3 +35,43 @@ function downloadCV() {
 }
 
 document.getElementById('downloadCvBtn').addEventListener('click', downloadCV);
+
+/* for active color changing of sections while scrolling */
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".section");
+    const navLinks = document.querySelectorAll(".nav a");
+
+    const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5 // Adjust as needed
+    };
+
+    const observerCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const sectionId = entry.target.getAttribute("id");
+                navLinks.forEach(link => {
+                    link.classList.toggle("active", link.getAttribute("href") === `#${sectionId}`);
+                });
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", (event) => {
+            event.preventDefault();
+            const targetId = link.getAttribute("href").substring(1);
+            document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
+
+            navLinks.forEach(nav => nav.classList.remove("active"));
+            link.classList.add("active");
+        });
+    });
+});
