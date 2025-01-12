@@ -49,21 +49,19 @@ ul {
     display: block;
     padding: 0 30px;
     opacity: 1;
-
-    /* position: fixed;
-    left: 270px;
-    top:0;
-    right:0;
-    bottom:0;
-    z-index:0;
+    margin-left: 270px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
     overflow-y: auto;
-    overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 .section.active {
     z-index: 2;
     opacity: 1;
-    animation: slideSection 1s ease;
+    /*animation: slideSection 1s ease;*/
 }
 
 @keyframes slideSection {
@@ -79,8 +77,6 @@ ul {
 .hidden {
     display: none !important;
 }
-
-
 
 .padd-15 {
     padding-left: 15px;
@@ -747,19 +743,24 @@ h3.my-profession {
     overflow: hidden;
     cursor: pointer;
     padding: 20px;
-    text-align: center; /* Center the content */
+    text-align: center;
+    /* Center the content */
 }
 
 .portfolio .portfolio-item-inner .portfolio-img img {
-    width: 100%; /* Set width to 100% of the container */
-    height: 200px; /* Set a fixed height */
-    object-fit: cover; /* Ensure the image covers the container, maintaining aspect ratio */
+    width: 100%;
+    /* Set width to 100% of the container */
+    height: 200px;
+    /* Set a fixed height */
+    object-fit: cover;
+    /* Ensure the image covers the container, maintaining aspect ratio */
     display: block;
 }
 
 .portfolio .portfolio-info {
     padding: 20px 0;
-    text-align: center; /* Center the info section */
+    text-align: center;
+    /* Center the info section */
 }
 
 .portfolio .portfolio-info h3 {
@@ -781,8 +782,10 @@ h3.my-profession {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
-    text-align: center; /* Ensure the button is centered */
-    margin-left: auto; /* Add these lines to center the button */
+    text-align: center;
+    /* Ensure the button is centered */
+    margin-left: auto;
+    /* Add these lines to center the button */
     margin-right: auto;
     font-weight: bold;
 }
@@ -790,6 +793,7 @@ h3.my-profession {
 .portfolio .portfolio-info .btn:hover {
     background-color: black;
 }
+
 /*certification section */
 
 .certification .container {

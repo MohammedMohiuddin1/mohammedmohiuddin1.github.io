@@ -17,15 +17,15 @@ for (let i = 0; i < totalNavList; i++) {
             navList[j].querySelector("a").classList.remove("active");
         }
         this.classList.add("active")
-        //showSection(this)
+        showSection(this)
     })
 
 }
-// function showSection(element)
-// {
-//     const target = element.getAttribute("href").split(#)[1];
-//     document.querySelector('#' + target).classList.add("active")
-// }
+function showSection(element)
+{
+    const target = element.getAttribute("href").split("#")[1];
+    document.querySelector('#' + target).classList.add("active")
+}
 
 function downloadCV() {
     var link = document.createElement('a');
