@@ -49,7 +49,7 @@ ul {
     display: block;
     padding: 0 30px;
     opacity: 1;
-    margin-left: 300px;
+    margin-left: 270px;
     top: 0;
     right: 0;
     bottom: 0;
@@ -159,7 +159,7 @@ ul {
 
 /* aside */
 .aside {
-    width: 300px;
+    width: 270px;
     background: var(--bg-black-100);
     position: fixed;
     left: 0;
@@ -992,12 +992,23 @@ h3.my-profession {
 
     .aside .nav-toggler {
         display: flex;
+        left:30px;
     }
-
+    .aside.open
+    {
+        left: 0;
+    }
+    .aside .nav-toggler.open
+    {
+        left: 300px;
+    }
     .section {
         left: 0;
     }
-
+    .secton.open
+    {
+        left:270px;
+    }
     .about .about-content .personal-info .info-item p span {
         display: block;
         margin-left: 0;
