@@ -784,6 +784,7 @@ h3.my-profession {
     text-align: center; /* Ensure the button is centered */
     margin-left: auto; /* Add these lines to center the button */
     margin-right: auto;
+    font-weight: bold;
 }
 
 .portfolio .portfolio-info .btn:hover {
