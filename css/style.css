@@ -1089,3 +1089,53 @@ h3.my-profession {
     top: 6px;
     left: 0;
 }
+
+
+@media only screen and (max-width: 844px) {
+    .aside {
+        left: -270px;
+        /* Hide sidebar off-screen by default */
+    }
+
+    .aside.open {
+        left: 0;
+        /* Show sidebar when open */
+    }
+
+    .section {
+        margin-left: 0;
+        /* Remove margin for smaller screens */
+        padding-top: 70px;
+        /* Add padding for top spacing */
+    }
+
+    .nav-toggler {
+        display: flex;
+        /* Show menu button on smaller screens */
+    }
+}
+
+/* Adjust layout for 845px to 1199px */
+@media only screen and (min-width: 845px) and (max-width: 1199px) {
+    .aside {
+        left: -270px;
+        /* Hide sidebar off-screen by default */
+    }
+
+    .aside.open {
+        left: 0;
+        /* Show sidebar when open */
+    }
+
+    .section {
+        margin-left: 0;
+        /* Remove margin for smaller screens */
+        padding-top: 70px;
+        /* Add padding for top spacing */
+    }
+
+    .nav-toggler {
+        display: flex;
+        /* Show menu button on smaller screens */
+    }
+}
