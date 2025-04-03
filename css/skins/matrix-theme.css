@@ -1,0 +1,90 @@
+:root {
+    --skin-color: #00ff00;
+    --matrix-bg: #121212;
+    --matrix-text: #00ff00;
+    --matrix-accent: #32CD32;
+    --matrix-dark: #003300;
+}
+
+.matrix-theme {
+    --bg-black-900: #0a0a0a;
+    --bg-black-100: #121212;
+    --bg-black-50: #1a1a1a;
+    --text-black-900: #00ff00;
+    --text-black-700: #32CD32;
+    --text-black-inverse: #121212;
+    font-family: 'Consolas', 'Courier New', monospace;
+}
+
+.matrix-theme .btn,
+.matrix-theme .framework-square {
+    font-family: 'Consolas', 'Courier New', monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--matrix-bg);
+}
+
+.matrix-theme .aside {
+    border-right-color: #00ff00;
+}
+
+.matrix-theme .progress-in {
+    background-color: #00ff00;
+}
+
+.matrix-theme .timeline .circle-dot {
+    background-color: #00ff00;
+}
+
+.matrix-theme .service-item-inner,
+.matrix-theme .portfolio-item-inner,
+.matrix-theme .certification-item-inner,
+.matrix-theme .timeline {
+    border: 1px solid #003300;
+    background-color: rgba(0, 10, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.1);
+}
+
+/* Matrix animation effect for headers */
+.matrix-theme h1,
+.matrix-theme h2,
+.matrix-theme h3,
+.matrix-theme h4 {
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+}
+
+/* Matrix-style cursor */
+.matrix-theme .typing::after {
+    content: '|';
+    animation: cursor-blink 1s step-end infinite;
+}
+
+@keyframes cursor-blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Matrix rain effect on the hero image */
+.matrix-theme .hero-svg-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.matrix-theme .floating-el-1,
+.matrix-theme .floating-el-2,
+.matrix-theme .floating-el-3 {
+    animation-duration: 2s;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+.matrix-theme .svg-line {
+    stroke-dasharray: 10;
+    stroke-dashoffset: 1000;
+    animation: dash 20s linear infinite;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+} 

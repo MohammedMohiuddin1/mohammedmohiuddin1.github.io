@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- Background Circle with gradient -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec1839" />
+      <stop offset="100%" stop-color="#ac1330" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main Circle -->
+  <circle cx="32" cy="32" r="32" fill="url(#gradient)"/>
+  
+  <!-- MM Monogram with stylized paths -->
+  <g fill="#ffffff">
+    <!-- Stylized MM Monogram -->
+    <path d="M14 22v20h3.5v-15l4.5 10h3l4.5-10v15h3.5v-20h-5l-4.5 10-4.5-10z"/>
+    <path d="M34 22v20h3.5v-15l4.5 10h3l4.5-10v15h3.5v-20h-5l-4.5 10-4.5-10z"/>
+  </g>
+  
+  <!-- Tech Design Elements -->
+  <circle cx="32" cy="32" r="30" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.3"/>
+  <circle cx="32" cy="32" r="26" fill="none" stroke="#ffffff" stroke-width="0.3" opacity="0.5"/>
+  
+  <!-- Digital Elements -->
+  <path d="M6,32 h4 m8,0 h4 m8,0 h4 m8,0 h4 m8,0 h4" stroke="#ffffff" stroke-width="0.5" opacity="0.6"/>
+  <path d="M32,6 v4 m0,8 v4 m0,8 v4 m0,8 v4 m0,8 v4" stroke="#ffffff" stroke-width="0.5" opacity="0.6"/>
+</svg> 
