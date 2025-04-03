@@ -15,6 +15,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, inital_scale=1.0">
         <title>Mohammed Mohiuddin</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="manifest" href="images/favicon/manifest.json">
+        <meta name="theme-color" content="#ec1839">
         <!-- ===== CSS Files ==== -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/skins/color-1.css">
@@ -31,6 +38,8 @@
             class="alternate-style" title="color-4" disabled>
         <link rel="stylesheet" href="css/skins/color-5.css"
             class="alternate-style" title="color-5" disabled>
+        <link rel="stylesheet" href="css/skins/matrix-theme.css"
+            id="matrix-theme-style" disabled>
         <link rel="stylesheet" href="css/style-switcher.css">
     </head>
     <body>
@@ -74,9 +83,9 @@
                                         Mohiuddin</span></h3>
                                 <h3 class="my-profession">I'm a <span
                                         class="typing"></span></h3>
-                                <p>I’m a Computer Science student passionate
+                                <p>I'm a Computer Science student passionate
                                     about programming, software development, and
-                                    artificial intelligence. I’ve worked on
+                                    artificial intelligence. I've worked on
                                     diverse
                                     projects, from secure Android apps to
                                     cloud-based systems and full-stack web
@@ -105,300 +114,349 @@
                                     </div>
                                 </div>
                                 <div class="home-img padd-15">
-                                    <img src="images/hero2.png" alt>
+                                    <div class="hero-svg-container">
+                                        <svg viewBox="0 0 500 500" class="hero-svg">
+                                            <!-- Background Circle -->
+                                            <circle cx="250" cy="250" r="200" class="svg-circle-bg" />
+                                            
+                                            <!-- Abstract Code Elements -->
+                                            <g class="code-elements">
+                                                <path d="M150,150 L220,150 L220,170 L150,170 Z" class="svg-el-1" />
+                                                <path d="M240,150 L350,150 L350,170 L240,170 Z" class="svg-el-2" />
+                                                <path d="M150,190 L300,190 L300,210 L150,210 Z" class="svg-el-3" />
+                                                <path d="M320,190 L350,190 L350,210 L320,210 Z" class="svg-el-1" />
+                                                <path d="M150,230 L180,230 L180,250 L150,250 Z" class="svg-el-2" />
+                                                <path d="M200,230 L350,230 L350,250 L200,250 Z" class="svg-el-3" />
+                                                <path d="M150,270 L250,270 L250,290 L150,290 Z" class="svg-el-1" />
+                                                <path d="M270,270 L350,270 L350,290 L270,290 Z" class="svg-el-2" />
+                                                <path d="M150,310 L200,310 L200,330 L150,330 Z" class="svg-el-3" />
+                                                <path d="M220,310 L350,310 L350,330 L220,330 Z" class="svg-el-1" />
+                                            </g>
+                                            
+                                            <!-- Connection Lines -->
+                                            <g class="connection-lines">
+                                                <path d="M120,150 C80,200 80,300 120,350" class="svg-line" />
+                                                <path d="M380,150 C420,200 420,300 380,350" class="svg-line" />
+                                                <path d="M150,120 C200,80 300,80 350,120" class="svg-line" />
+                                                <path d="M150,380 C200,420 300,420 350,380" class="svg-line" />
+                                            </g>
+                                            
+                                            <!-- Central Icon -->
+                                            <g class="central-icon">
+                                                <circle cx="250" cy="250" r="50" class="svg-icon-bg" />
+                                                <g class="svg-icon">
+                                                    <!-- Code Symbol { } -->
+                                                    <path d="M235,230 L220,250 L235,270" class="svg-icon-el" stroke-width="6" fill="none" />
+                                                    <path d="M265,230 L280,250 L265,270" class="svg-icon-el" stroke-width="6" fill="none" />
+                                                </g>
+                                            </g>
+                                            
+                                            <!-- Floating Elements -->
+                                            <g class="floating-elements">
+                                                <circle cx="150" cy="150" r="10" class="floating-el-1" />
+                                                <circle cx="350" cy="150" r="10" class="floating-el-2" />
+                                                <circle cx="150" cy="350" r="10" class="floating-el-3" />
+                                                <circle cx="350" cy="350" r="10" class="floating-el-1" />
+                                                <circle cx="250" cy="150" r="8" class="floating-el-2" />
+                                                <circle cx="250" cy="350" r="8" class="floating-el-3" />
+                                                <circle cx="150" cy="250" r="8" class="floating-el-1" />
+                                                <circle cx="350" cy="250" r="8" class="floating-el-2" />
+                                            </g>
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </section>
-                    <!-- ===== Home Section End ==== -->
-                    <!-- ===== About Section Start ==== -->
-                    <section class="about section" id="about">
-                        <div class="container">
-                            <div class="row">
-                                <div class="section-title padd-15">
-                                    <h2>About Me</h2>
-                                </div>
+                    </div>
+                </section>
+                <!-- ===== Home Section End ==== -->
+                <!-- ===== About Section Start ==== -->
+                <section class="about section" id="about">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title padd-15">
+                                <h2>About Me</h2>
                             </div>
-                            <div class="row">
-                                <div class="about-content padd-15">
-                                    <div class="row">
-                                        <div class="about-text padd-15">
-                                            <h3>I'm Mohammed Mohiuddin and I'm a
-                                                <span>Sofware
-                                                    Engineer</span></h3>
-                                            <p>I’m a Computer Science student at
-                                                the University of Washington
-                                                that is passionate
-                                                about: programming, software
-                                                development,
-                                                artificial intelligence, and
-                                                cybersecurity. I’ve worked on
-                                                diverse
-                                                projects, from secure Android
-                                                apps to
-                                                cloud-based systems and
-                                                full-stack web
-                                                applications.
-                                                I enjoy designing websites,
-                                                creating complex applications
-                                                and,
-                                                tutoring.</p>
-                                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="about-content padd-15">
+                                <div class="row">
+                                    <div class="about-text padd-15">
+                                        <h3>I'm Mohammed Mohiuddin and I'm a
+                                            <span>Sofware
+                                                Engineer</span></h3>
+                                        <p>I'm a Computer Science student at
+                                            the University of Washington
+                                            that is passionate
+                                            about: programming, software
+                                            development,
+                                            artificial intelligence, and
+                                            cybersecurity. I've worked on
+                                            diverse
+                                            projects, from secure Android
+                                            apps to
+                                            cloud-based systems and
+                                            full-stack web
+                                            applications.
+                                            I enjoy designing websites,
+                                            creating complex applications
+                                            and,
+                                            tutoring.</p>
                                     </div>
-                                    <div class="row">
-                                        <div class="personal-info padd-15">
-                                            <div class="row">
-                                                <div class="info-item padd-15">
-                                                    <p>Birthday :
-                                                        <span>10/30/2003</span></p>
-                                                </div>
-                                                <div class="info-item padd-15">
-                                                    <p>Age : <span>21</span></p>
-                                                </div>
-                                                <div class="info-item padd-15">
-                                                    <p>Website :
-                                                        <span>mohammedmohiuddin.com</span></p>
-                                                </div>
-                                                <div class="info-item padd-15">
-                                                    <p>Email :
-                                                        <span>mmuzm786@gmail.com</span></p>
-                                                </div>
-                                                <div class="info-item padd-15">
-                                                    <p>Degree :
-                                                        <span>CS</span></p>
-                                                </div>
-                                                <div class="info-item padd-15">
-                                                    <p>Phone : <span>+1
-                                                            425-324-4465</span></p>
-                                                </div>
-                                                <div class="info-item padd-15">
-                                                    <p>City :
-                                                        <span>Bellevue</span></p>
-                                                </div>
-                                                <div class="info-item padd-15">
-                                                    <p>Tutoring :
-                                                        <span>Available</span></p>
-                                                </div>
+                                </div>
+                                <div class="row">
+                                    <div class="personal-info padd-15">
+                                        <div class="row">
+                                            <div class="info-item padd-15">
+                                                <p>Birthday :
+                                                    <span>10/30/2003</span></p>
                                             </div>
-                                            <div class="row">
-                                                <div class="buttons padd-15">
-                                                    <a
-                                                        href="javascript:void(0);"
-                                                        class="btn"
-                                                        id="downloadCvBtn">Download
-                                                        CV</a>
-                                                    <a href="#contact"
-                                                        class="btn hire-me">Connect
-                                                        With Me</a>
-                                                </div>
+                                            <div class="info-item padd-15">
+                                                <p>Age : <span>21</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Website :
+                                                    <span>mohammedmohiuddin.com</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Email :
+                                                    <span>mmuzm786@gmail.com</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Degree :
+                                                    <span>CS</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Phone : <span>+1
+                                                        425-324-4465</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>City :
+                                                    <span>Bellevue</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Tutoring :
+                                                    <span>Available</span></p>
                                             </div>
                                         </div>
-                                        <div class="skills padd-15">
-                                            <div class="row">
-                                                <div class="skill-item padd-15">
-                                                    <h5>C\C++</h5>
-                                                    <div class="progress">
-                                                        <div class="progress-in"
-                                                            style="width: 100%;"></div>
-                                                        <div
-                                                            class="skill-percent">100%</div>
-                                                    </div>
-                                                </div>
-                                                <div class="skill-item padd-15">
-                                                    <h5>C#</h5>
-                                                    <div class="progress">
-                                                        <div class="progress-in"
-                                                            style="width: 95%;"></div>
-                                                        <div
-                                                            class="skill-percent">95%</div>
-                                                    </div>
-                                                </div>
-                                                <div class="skill-item padd-15">
-                                                    <h5>Java</h5>
-                                                    <div class="progress">
-                                                        <div class="progress-in"
-                                                            style="width: 100%;"></div>
-                                                        <div
-                                                            class="skill-percent">100%</div>
-                                                    </div>
-                                                </div>
-                                                <div class="skill-item padd-15">
-                                                    <h5>Python</h5>
-                                                    <div class="progress">
-                                                        <div class="progress-in"
-                                                            style="width: 90%;"></div>
-                                                        <div
-                                                            class="skill-percent">90%</div>
-                                                    </div>
-                                                </div>
-                                                <div class="skill-item padd-15">
-                                                    <h5>JavaScript</h5>
-                                                    <div class="progress">
-                                                        <div class="progress-in"
-                                                            style="width: 95%;"></div>
-                                                        <div
-                                                            class="skill-percent">95%</div>
-                                                    </div>
-                                                </div>
-                                                <div class="skill-item padd-15">
-                                                    <h5>HTML</h5>
-                                                    <div class="progress">
-                                                        <div class="progress-in"
-                                                            style="width: 85%;"></div>
-                                                        <div
-                                                            class="skill-percent">85%</div>
-                                                    </div>
-                                                </div>
-                                                <div class="skill-item padd-15">
-                                                    <h5>CSS</h5>
-                                                    <div class="progress">
-                                                        <div class="progress-in"
-                                                            style="width: 90%;"></div>
-                                                        <div
-                                                            class="skill-percent">90%</div>
-                                                    </div>
-                                                </div>
-                                                <div class="skill-item padd-15">
-                                                    <h5>SQL</h5>
-                                                    <div class="progress">
-                                                        <div class="progress-in"
-                                                            style="width: 100%;"></div>
-                                                        <div
-                                                            class="skill-percent">100%</div>
-                                                    </div>
-                                                </div>
-
+                                        <div class="row">
+                                            <div class="buttons padd-15">
+                                                <a
+                                                    href="javascript:void(0);"
+                                                    class="btn"
+                                                    id="downloadCvBtn">Download
+                                                    CV</a>
+                                                <a href="#contact"
+                                                    class="btn hire-me">Connect
+                                                    With Me</a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="education padd-15">
-                                            <h3 class="title">Education</h3>
-                                            <div class="row">
-                                                <div
-                                                    class="timeline-box padd-15">
+                                    <div class="skills padd-15">
+                                        <div class="row">
+                                            <div class="skill-item padd-15">
+                                                <h5>C\C++</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in"
+                                                        style="width: 100%;"></div>
                                                     <div
-                                                        class="timeline shadow-dark">
-                                                        <!-- ====== Timeline Item ====== -->
-                                                        <div
-                                                            class="timeline-item">
-                                                            <div
-                                                                class="circle-dot"></div>
-                                                            <h3
-                                                                class="timeline-date">
-                                                                <i
-                                                                    class="fa fa-calendar"></i>
-                                                                September 2022 - June 2026
-                                                            </h3>
-                                                            <h4
-                                                                class="timeline-title">Bachelor
-                                                                in Computer
-                                                                Science</h4>
-                                                            <p
-                                                                class="timeline-text"> Pursuing a Bachelor's Degree in Computer Science at the University of Washington. Coursework: Data structures and Algorithms, Discrete Mathematics, Software Engineering, Operating Systems, Databases, Usability and User Centered Design, Information Assurance and Cybersecurity. 
-                                                            </p>
-                                                        </div>
-                                                        <!-- ====== Timeline Item ====== -->
-                                                        <div
-                                                            class="timeline-item">
-                                                            <div
-                                                                class="circle-dot"></div>
-                                                            <h3
-                                                                class="timeline-date">
-                                                                <i
-                                                                    class="fa fa-calendar"></i>
-                                                                September 2020 - June 2022
-                                                            </h3>
-                                                            <h4
-                                                                class="timeline-title">Bellevue College (RS Program)</h4>
-                                                            <p
-                                                                class="timeline-text">Spent the last 2 years of my high school doing the running start program
-                                                                where I was able to take college level classes to transfer credits towards my degree. Courses include: Calculus I - IV, Statistics, CSS 210, CSS 211, Introduction to Architecture, Introduction to Photography, and Linear Algebra.
-                                                            </p>
-                                                        </div>
-                                                        <!-- ====== Timeline Item ====== -->
-                                                        <div
-                                                            class="timeline-item">
-                                                            <div
-                                                                class="circle-dot"></div>
-                                                            <h3
-                                                                class="timeline-date">
-                                                                <i
-                                                                    class="fa fa-calendar"></i>
-                                                                September 2018 - June 2020
-                                                            </h3>
-                                                            <h4
-                                                                class="timeline-title">Sammamish High School</h4>
-                                                            <p
-                                                                class="timeline-text">Did 9th Grade and 10th Grade at SHS where I challenged myself with rigorous AP courses like AP Computer Science, AP Calculus, AP Human Geography, etc. 
-                                                            </p>
-                                                        </div>
-                                                    </div>
+                                                        class="skill-percent">100%</div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="experience padd-15">
-                                            <h3 class="title">Experience</h3>
-                                            <div class="row">
-                                                <div
-                                                    class="timeline-box padd-15">
+                                            <div class="skill-item padd-15">
+                                                <h5>C#</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in"
+                                                        style="width: 95%;"></div>
                                                     <div
-                                                        class="timeline shadow-dark">
-                                                        <!-- ====== Timeline Item ====== -->
-                                                        <div
-                                                            class="timeline-item">
-                                                            <div
-                                                                class="circle-dot"></div>
-                                                            <h3
-                                                                class="timeline-date">
-                                                                <i
-                                                                    class="fa fa-calendar"></i>
-                                                                January 2024 - June 2024
-                                                            </h3>
-                                                            <h4
-                                                                class="timeline-title">
-                                                                Undergraduate Research Assistant</h4>
-                                                            <p
-                                                                class="timeline-text">I collaborated with the Security in Emerging Environments Lab (SiEE) at the University of Washington to research and evaluate advanced file-sharing techniques and encryption frameworks, testing on a range of Android devices for optimal compatibility.
+                                                        class="skill-percent">95%</div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item padd-15">
+                                                <h5>Java</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in"
+                                                        style="width: 100%;"></div>
+                                                    <div
+                                                        class="skill-percent">100%</div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item padd-15">
+                                                <h5>Python</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in"
+                                                        style="width: 90%;"></div>
+                                                    <div
+                                                        class="skill-percent">90%</div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item padd-15">
+                                                <h5>JavaScript</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in"
+                                                        style="width: 95%;"></div>
+                                                    <div
+                                                        class="skill-percent">95%</div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item padd-15">
+                                                <h5>HTML</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in"
+                                                        style="width: 85%;"></div>
+                                                    <div
+                                                        class="skill-percent">85%</div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item padd-15">
+                                                <h5>CSS</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in"
+                                                        style="width: 90%;"></div>
+                                                    <div
+                                                        class="skill-percent">90%</div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item padd-15">
+                                                <h5>SQL</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in"
+                                                        style="width: 100%;"></div>
+                                                    <div
+                                                        class="skill-percent">100%</div>
+                                                </div>
+                                            </div>
 
-                                                                Helped develop a user-friendly media-sharing application that leverages a fully homomorphic encryption scheme to enable secure video sharing between users.
-                                                            </p>
-                                                        </div>
-                                                        <!-- ====== Timeline Item ====== -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="education padd-15">
+                                        <h3 class="title">Education</h3>
+                                        <div class="row">
+                                            <div
+                                                class="timeline-box padd-15">
+                                                <div
+                                                    class="timeline shadow-dark">
+                                                    <!-- ====== Timeline Item ====== -->
+                                                    <div
+                                                        class="timeline-item">
                                                         <div
-                                                            class="timeline-item">
-                                                            <div
-                                                                class="circle-dot"></div>
-                                                            <h3
-                                                                class="timeline-date">
-                                                                <i
-                                                                    class="fa fa-calendar"></i>
-                                                                September 2023 - January 2024
-                                                            </h3>
-                                                            <h4
-                                                                class="timeline-title">AI Research Intern</h4>
-                                                            <p
-                                                                class="timeline-text"> Interned at dataRoo. Utilized a diverse skill set encompassing JavaScript, HTML, PowerShell, C/C++, C#, Java, Python, SQL, and AI frameworks including PyTorch, and TensorFlow to develop and train AI models.
-                                                            </p>
-                                                        </div>
-                                                        <!-- ====== Timeline Item ====== -->
+                                                            class="circle-dot"></div>
+                                                        <h3
+                                                            class="timeline-date">
+                                                            <i
+                                                                class="fa fa-calendar"></i>
+                                                            September 2022 - June 2026
+                                                        </h3>
+                                                        <h4
+                                                            class="timeline-title">Bachelor
+                                                            in Computer
+                                                            Science</h4>
+                                                        <p
+                                                            class="timeline-text"> Pursuing a Bachelor's Degree in Computer Science at the University of Washington. Coursework: Data structures and Algorithms, Discrete Mathematics, Software Engineering, Operating Systems, Databases, Usability and User Centered Design, Information Assurance and Cybersecurity. 
+                                                        </p>
+                                                    </div>
+                                                    <!-- ====== Timeline Item ====== -->
+                                                    <div
+                                                        class="timeline-item">
                                                         <div
-                                                            class="timeline-item">
-                                                            <div
-                                                                class="circle-dot"></div>
-                                                            <h3
-                                                                class="timeline-date">
-                                                                <i
-                                                                    class="fa fa-calendar"></i>
-                                                                January 2020 - January 2022
-                                                            </h3>
-                                                            <h4
-                                                                class="timeline-title">Coding Instructor</h4>
-                                                            <p
-                                                                class="timeline-text">Instructor at Interactive Math Academy for Students of all grade levels typically ranging from (6th - 10th). Taught subjects like Programming with Python and Java, and Math (10th Grade and Below).
-                                                                
-                                                            </p>
-                                                        </div>
+                                                            class="circle-dot"></div>
+                                                        <h3
+                                                            class="timeline-date">
+                                                            <i
+                                                                class="fa fa-calendar"></i>
+                                                            September 2020 - June 2022
+                                                        </h3>
+                                                        <h4
+                                                            class="timeline-title">Bellevue College (RS Program)</h4>
+                                                        <p
+                                                            class="timeline-text">Spent the last 2 years of my high school doing the running start program
+                                                            where I was able to take college level classes to transfer credits towards my degree. Courses include: Calculus I - IV, Statistics, CSS 210, CSS 211, Introduction to Architecture, Introduction to Photography, and Linear Algebra.
+                                                        </p>
+                                                    </div>
+                                                    <!-- ====== Timeline Item ====== -->
+                                                    <div
+                                                        class="timeline-item">
+                                                        <div
+                                                            class="circle-dot"></div>
+                                                        <h3
+                                                            class="timeline-date">
+                                                            <i
+                                                                class="fa fa-calendar"></i>
+                                                            September 2018 - June 2020
+                                                        </h3>
+                                                        <h4
+                                                            class="timeline-title">Sammamish High School</h4>
+                                                        <p
+                                                            class="timeline-text">Did 9th Grade and 10th Grade at SHS where I challenged myself with rigorous AP courses like AP Computer Science, AP Calculus, AP Human Geography, etc. 
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="experience padd-15">
+                                        <h3 class="title">Experience</h3>
+                                        <div class="row">
+                                            <div
+                                                class="timeline-box padd-15">
+                                                <div
+                                                    class="timeline shadow-dark">
+                                                    <!-- ====== Timeline Item ====== -->
+                                                    <div
+                                                        class="timeline-item">
+                                                        <div
+                                                            class="circle-dot"></div>
+                                                        <h3
+                                                            class="timeline-date">
+                                                            <i
+                                                                class="fa fa-calendar"></i>
+                                                            January 2024 - June 2024
+                                                        </h3>
+                                                        <h4
+                                                            class="timeline-title">
+                                                            Undergraduate Research Assistant</h4>
+                                                        <p
+                                                            class="timeline-text">I collaborated with the Security in Emerging Environments Lab (SiEE) at the University of Washington to research and evaluate advanced file-sharing techniques and encryption frameworks, testing on a range of Android devices for optimal compatibility.
+
+                                                            Helped develop a user-friendly media-sharing application that leverages a fully homomorphic encryption scheme to enable secure video sharing between users.
+                                                        </p>
+                                                    </div>
+                                                    <!-- ====== Timeline Item ====== -->
+                                                    <div
+                                                        class="timeline-item">
+                                                        <div
+                                                            class="circle-dot"></div>
+                                                        <h3
+                                                            class="timeline-date">
+                                                            <i
+                                                                class="fa fa-calendar"></i>
+                                                            September 2023 - January 2024
+                                                        </h3>
+                                                        <h4
+                                                            class="timeline-title">AI Research Intern</h4>
+                                                        <p
+                                                            class="timeline-text"> Interned at dataRoo. Utilized a diverse skill set encompassing JavaScript, HTML, PowerShell, C/C++, C#, Java, Python, SQL, and AI frameworks including PyTorch, and TensorFlow to develop and train AI models.
+                                                        </p>
+                                                    </div>
+                                                    <!-- ====== Timeline Item ====== -->
+                                                    <div
+                                                        class="timeline-item">
+                                                        <div
+                                                            class="circle-dot"></div>
+                                                        <h3
+                                                            class="timeline-date">
+                                                            <i
+                                                                class="fa fa-calendar"></i>
+                                                            January 2020 - January 2022
+                                                        </h3>
+                                                        <h4
+                                                            class="timeline-title">Coding Instructor</h4>
+                                                        <p
+                                                            class="timeline-text">Instructor at Interactive Math Academy for Students of all grade levels typically ranging from (6th - 10th). Taught subjects like Programming with Python and Java, and Math (10th Grade and Below).
+                                                            
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -407,560 +465,564 @@
                                 </div>
                             </div>
                         </div>
-                    </section>
-                    <!-- ===== About Section End ==== -->
-                    <!-- ===== Services Section Start ==== -->
-                    <section class="service section" id="services">
-                        <div class="container">
-                            <div class="row">
-                                <div class="section-title padd-15">
-                                    <h2>Skills</h2>
-                                </div>
+                    </div>
+                </section>
+                <!-- ===== About Section End ==== -->
+                <!-- ===== Services Section Start ==== -->
+                <section class="service section" id="services">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title padd-15">
+                                <h2>Skills</h2>
                             </div>
-                            <div class="row">
-                                <!-- ===== Service Item Start ===== -->
-                                <div class="service-item padd-15">
-                                    <div class="service-item-inner">
-                                        <div class="icon">
-                                            <i class="fa fa-mobile-alt"></i>
-                                        </div>
-                                        <h4>Android App Development</h4>
-                                        <p>Experience working with designing and developing secure android applications.</p>
-                                        <div class="frameworks">
-                                            <div class="framework-square">Android Studio</div>
-                                            <div class="framework-square">Flutter</div>
-                                            <div class="framework-square">Dart</div>
-                                        </div>
+                        </div>
+                        <div class="row">
+                            <!-- ===== Service Item Start ===== -->
+                            <div class="service-item padd-15">
+                                <div class="service-item-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-mobile-alt"></i>
+                                    </div>
+                                    <h4>Android App Development</h4>
+                                    <p>Experience working with designing and developing secure android applications.</p>
+                                    <div class="frameworks">
+                                        <div class="framework-square">Android Studio</div>
+                                        <div class="framework-square">Flutter</div>
+                                        <div class="framework-square">Dart</div>
                                     </div>
                                 </div>
-                                <!-- ===== Service Item End ===== -->
+                            </div>
+                            <!-- ===== Service Item End ===== -->
 
-                                <!-- ===== Service Item Start ===== -->
-                                <div class="service-item padd-15">
-                                    <div class="service-item-inner">
-                                        <div class="icon">
-                                            <i class="fa fa-laptop-code"></i>
-                                        </div>
-                                        <h4>Front End Development</h4>
-                                        <p>Experiencing developing front-end applications using the latest technologies/frameworks.</p>
-                                        <div class="frameworks">
-                                            <div class="framework-square">React</div>
-                                            <div class="framework-square">AngularJS</div>
-                                            <div class="framework-square">Tailwind</div>
-                                        </div>
+                            <!-- ===== Service Item Start ===== -->
+                            <div class="service-item padd-15">
+                                <div class="service-item-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-laptop-code"></i>
+                                    </div>
+                                    <h4>Front End Development</h4>
+                                    <p>Experiencing developing front-end applications using the latest technologies/frameworks.</p>
+                                    <div class="frameworks">
+                                        <div class="framework-square">React</div>
+                                        <div class="framework-square">AngularJS</div>
+                                        <div class="framework-square">Tailwind</div>
                                     </div>
                                 </div>
-                                <!-- ===== Service Item End ===== -->
-                                <!-- ===== Service Item Start ===== -->
-                                <div class="service-item padd-15">
-                                    <div class="service-item-inner">
-                                        <div class="icon">
-                                            <i class="fa fa-cubes"></i>
-                                        </div>
-                                        <h4>Deep Learning</h4>
-                                        <p>Experience working with designing and developing deep learning models.</p>
-                                        <div class="frameworks">
-                                            <div class="framework-square">TensorFlow</div>
-                                            <div class="framework-square">PyTorch</div>
-                                            <div class="framework-square">Keras</div>
-                                        </div>
+                            </div>
+                            <!-- ===== Service Item End ===== -->
+                            <!-- ===== Service Item Start ===== -->
+                            <div class="service-item padd-15">
+                                <div class="service-item-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-cubes"></i>
+                                    </div>
+                                    <h4>Deep Learning</h4>
+                                    <p>Experience working with designing and developing deep learning models.</p>
+                                    <div class="frameworks">
+                                        <div class="framework-square">TensorFlow</div>
+                                        <div class="framework-square">PyTorch</div>
+                                        <div class="framework-square">Keras</div>
                                     </div>
                                 </div>
-                                <!-- ===== Service Item End ===== -->
-                                <!-- ===== Service Item Start ===== -->
-                                <div class="service-item padd-15">
-                                    <div class="service-item-inner">
-                                        <div class="icon">
-                                            <i class="fa fa-database"></i>
-                                        </div>
-                                        <h4>Backend Development</h4>
-                                        <p>Experience working and developing with backend frameworks.</p>
-                                        <div class="frameworks">
-                                            <div class="framework-square">Node.js</div>
-                                            <div class="framework-square">Express.js</div>
-                                            <div class="framework-square">MongoDB</div>
-                                            <div class="framework-square">PostgreSQL</div>
-                                        </div>
+                            </div>
+                            <!-- ===== Service Item End ===== -->
+                            <!-- ===== Service Item Start ===== -->
+                            <div class="service-item padd-15">
+                                <div class="service-item-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-database"></i>
+                                    </div>
+                                    <h4>Backend Development</h4>
+                                    <p>Experience working and developing with backend frameworks.</p>
+                                    <div class="frameworks">
+                                        <div class="framework-square">Node.js</div>
+                                        <div class="framework-square">Express.js</div>
+                                        <div class="framework-square">MongoDB</div>
+                                        <div class="framework-square">PostgreSQL</div>
                                     </div>
                                 </div>
-                                <!-- ===== Service Item End ===== -->
-                                <!-- ===== Service Item Start ===== -->
-                                <div class="service-item padd-15">
-                                    <div class="service-item-inner">
-                                        <div class="icon">
-                                            <i class="fa fa-palette"></i>
-                                        </div>
-                                        <h4>UI/UX Design</h4>
-                                        <p>Experience creating and designing user-friendly interfaces.</p>
-                                        <div class="frameworks">
-                                            <div class="framework-square">Figma</div>
-                                            <div class="framework-square">Adobe XD</div>
-                                            <div class="framework-square">Photoshop</div>
-                                        </div>
+                            </div>
+                            <!-- ===== Service Item End ===== -->
+                            <!-- ===== Service Item Start ===== -->
+                            <div class="service-item padd-15">
+                                <div class="service-item-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-palette"></i>
+                                    </div>
+                                    <h4>UI/UX Design</h4>
+                                    <p>Experience creating and designing user-friendly interfaces.</p>
+                                    <div class="frameworks">
+                                        <div class="framework-square">Figma</div>
+                                        <div class="framework-square">Adobe XD</div>
+                                        <div class="framework-square">Photoshop</div>
                                     </div>
                                 </div>
-                                <!-- ===== Service Item End ===== -->
-                                <!-- ===== Service Item Start ===== -->
-                                <div class="service-item padd-15">
-                                    <div class="service-item-inner">
-                                        <div class="icon">
-                                            <i class="fa fa-cloud"></i>
-                                        </div>
-                                        <h4>Cloud Development</h4>
-                                        <p>Experience working with developing and deploying applications on cloud platforms.</p>
-                                        <div class="frameworks">
-                                            <div class="framework-square">AWS</div>
-                                            <div class="framework-square">Azure</div>
-                                            <div class="framework-square">ASP.NET</div>
-                                        </div>
+                            </div>
+                            <!-- ===== Service Item End ===== -->
+                            <!-- ===== Service Item Start ===== -->
+                            <div class="service-item padd-15">
+                                <div class="service-item-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-cloud"></i>
+                                    </div>
+                                    <h4>Cloud Development</h4>
+                                    <p>Experience working with developing and deploying applications on cloud platforms.</p>
+                                    <div class="frameworks">
+                                        <div class="framework-square">AWS</div>
+                                        <div class="framework-square">Azure</div>
+                                        <div class="framework-square">ASP.NET</div>
                                     </div>
                                 </div>
-                                <!-- ===== Service Item End ===== -->
-                                <!-- ===== Service Item Start ===== -->
-                                <div class="service-item padd-15">
-                                    <div class="service-item-inner">
-                                        <div class="icon">
-                                            <i class="fa fa-pencil-square"></i>
-                                        </div>
-                                        <h4>DSA Tutoring</h4>
-                                        <p>3+ years experience teaching students how to code and DSA.</p>
-                                        <div class="frameworks">
-                                            <div class="framework-square">Python</div>
-                                            <div class="framework-square">Java</div>
-                                            <div class="framework-square">C++</div>
-                                        </div>
+                            </div>
+                            <!-- ===== Service Item End ===== -->
+                            <!-- ===== Service Item Start ===== -->
+                            <div class="service-item padd-15">
+                                <div class="service-item-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-pencil-square"></i>
+                                    </div>
+                                    <h4>DSA Tutoring</h4>
+                                    <p>3+ years experience teaching students how to code and DSA.</p>
+                                    <div class="frameworks">
+                                        <div class="framework-square">Python</div>
+                                        <div class="framework-square">Java</div>
+                                        <div class="framework-square">C++</div>
                                     </div>
                                 </div>
-                                <!-- ===== Service Item End ===== -->
-                                <!-- ===== Service Item Start ===== -->
-                                <div class="service-item padd-15">
-                                    <div class="service-item-inner">
-                                        <div class="icon">
-                                            <i class="fa fa-cogs"></i>
-                                        </div>
-                                        <h4>Operating Systems</h4>
-                                        <p>Experience working with different operating systems and their components.</p>
-                                        <div class="frameworks">
-                                            <div class="framework-square">C</div>
-                                            <div class="framework-square">Assembly</div>
-                                            <div class="framework-square">Linux</div>
-                                            <div class="framework-square">VirtualBox</div>
-                                        </div>
+                            </div>
+                            <!-- ===== Service Item End ===== -->
+                            <!-- ===== Service Item Start ===== -->
+                            <div class="service-item padd-15">
+                                <div class="service-item-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-cogs"></i>
+                                    </div>
+                                    <h4>Operating Systems</h4>
+                                    <p>Experience working with different operating systems and their components.</p>
+                                    <div class="frameworks">
+                                        <div class="framework-square">C</div>
+                                        <div class="framework-square">Assembly</div>
+                                        <div class="framework-square">Linux</div>
+                                        <div class="framework-square">VirtualBox</div>
                                     </div>
                                 </div>
-                                <!-- ===== Service Item End ===== -->
-                                <!-- ===== Service Item Start ===== -->
-                                <div class="service-item padd-15">
-                                    <div class="service-item-inner">
-                                        <div class="icon">
-                                            <i class="fa fa-check-circle"></i>
-                                        </div>
-                                        <h4>Secure Systems Development</h4>
-                                        <p>Experience working with designing and developing secure systems.</p>
-                                        <div class="frameworks">
-                                            <div class="framework-square">Cryptography & Encryption</div>
-                                            <div class="framework-square">Network Security</div>
-                                            <div class="framework-square">Secure Coding</div>
-                                        </div>
+                            </div>
+                            <!-- ===== Service Item End ===== -->
+                            <!-- ===== Service Item Start ===== -->
+                            <div class="service-item padd-15">
+                                <div class="service-item-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-check-circle"></i>
+                                    </div>
+                                    <h4>Secure Systems Development</h4>
+                                    <p>Experience working with designing and developing secure systems.</p>
+                                    <div class="frameworks">
+                                        <div class="framework-square">Cryptography & Encryption</div>
+                                        <div class="framework-square">Network Security</div>
+                                        <div class="framework-square">Secure Coding</div>
                                     </div>
                                 </div>
-                                <!-- ===== Service Item End ===== -->
+                            </div>
+                            <!-- ===== Service Item End ===== -->
+                        </div>
+                    </div>
+                </section>
+                <!-- ===== Services Section End ==== -->
+                <!-- ===== Portfolio Section Start ==== -->
+                <section class="portfolio section" id="portfolio">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title padd-15">
+                                <h2>Portfolio</h2>
                             </div>
                         </div>
-                    </section>
-                    <!-- ===== Services Section End ==== -->
-                    <!-- ===== Portfolio Section Start ==== -->
-                    <section class="portfolio section" id="portfolio">
-                        <div class="container">
-                            <div class="row">
-                                <div class="section-title padd-15">
-                                    <h2>Portfolio</h2>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="portfolio-heading padd-15">
-                                    <h2>My Recent Projects :</h2>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <!-- ====== portfolio item start ====== -->
-                                <div class="portfolio-item padd-15">
-                                    <div class="portfolio-item-inner shadow-dark">
-                                        <div class="portfolio-img">
-                                            <img src="images/portfolio/flutter.png" alt="Project 1">
-                                        </div>
-                                        <div class="portfolio-info">
-                                            <h3>GhostPeerShare</h3>
-                                            <p>Fully homomorphic end-to-end encrypted video sharing application ensuring privacy and security for users.</p>
-                                            <a href="https://github.com/MohammedMohiuddin1/GhostPeerShare" target="_blank" class="btn">Visit Project</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- ====== portfolio item end ====== -->
-                                <!-- ====== portfolio item start ====== -->
-                                <div class="portfolio-item padd-15">
-                                    <div class="portfolio-item-inner shadow-dark">
-                                        <div class="portfolio-img">
-                                            <img src="images/portfolio/p2.webp" alt="Project 2">
-                                        </div>
-                                        <div class="portfolio-info">
-                                            <h3>Data Flow Cloud Web Application</h3>
-                                            <p>
-                                                Developed a cloud-based web application for seamless data management and efficient transfer.</p>
-                                            <a href="https://github.com/MohammedMohiuddin1/Cloud-Data-Flow-Web-Application" target="_blank" class="btn">Visit Project</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- ====== portfolio item end ====== -->
-                                <!-- ====== portfolio item start ====== -->
-                                <div class="portfolio-item padd-15">
-                                    <div class="portfolio-item-inner shadow-dark">
-                                        <div class="portfolio-img">
-                                            <img src="images/portfolio/p3.jpg" alt="Project 3">
-                                        </div>
-                                        <div class="portfolio-info">
-                                            <h3>AWS Backup Manager</h3>
-                                            <p>
-                                                Created a Python application leveraging AWS S3 and Boto3 for cloud-based backup and restore.</p>
-                                            <a href="https://github.com/MohammedMohiuddin1/AWS-Backup-Manager" target="_blank" class="btn">Visit Project</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- ====== portfolio item end ====== -->
-                                <!-- ====== portfolio item start ====== -->
-                                <div class="portfolio-item padd-15">
-                                    <div class="portfolio-item-inner shadow-dark">
-                                        <div class="portfolio-img">
-                                            <img src="images/portfolio/p4.png" alt="Project 4">
-                                        </div>
-                                        <div class="portfolio-info">
-                                            <h3>Course Management System</h3>
-                                            <p>Complex CMS built on fundamental SOLID design principles, object-oriented programming for efficient management.</p>
-                                            <a href="https://github.com/MohammedMohiuddin1/Course-Management-System" target="_blank" class="btn">Visit Project</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- ====== portfolio item end ====== -->
-                                <!-- ====== portfolio item start ====== -->
-                                <div class="portfolio-item padd-15">
-                                    <div class="portfolio-item-inner shadow-dark">
-                                        <div class="portfolio-img">
-                                            <img src="images/portfolio/p5.jpeg" alt="Project 5">
-                                        </div>
-                                        <div class="portfolio-info">
-                                            <h3>Unix Shell</h3>
-                                            <p>A feature-rich Unix shell implemented in C, offering extensive functionality and user-friendly interface.</p>
-                                            <a href="https://github.com/MohammedMohiuddin1/Unix-Shell" target="_blank" class="btn">Visit Project</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- ====== portfolio item end ====== -->
-                                <!-- ====== portfolio item start ====== -->
-                                <div class="portfolio-item padd-15">
-                                    <div class="portfolio-item-inner shadow-dark">
-                                        <div class="portfolio-img">
-                                            <img src="images/portfolio/p6.png" alt="Project 6">
-                                        </div>
-                                        <div class="portfolio-info">
-                                            <h3>Multi-Threaded Sudoku Validator</h3>
-                                            <p>Multi-threaded program to validate and solve Sudoku puzzles using parallel processing techniques.</p>
-                                            <a href="https://github.com/MohammedMohiuddin1/Multi-Threaded-Sudoku-Validator" target="_blank" class="btn">Visit Project</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- ====== portfolio item end ====== -->
+                        <div class="row">
+                            <div class="portfolio-heading padd-15">
+                                <h2>My Recent Projects :</h2>
                             </div>
                         </div>
-                    </section>
-                    <!-- ===== Portfolio Section End ==== -->
-                    <!-- ===== Certification Section Start ==== -->
-                    <section class="certification section" id="certifications">
-                        <div class="container">
-                            <div class="row">
-                                <div class="section-title padd-15">
-                                    <h2>Certifications</h2>
+                        <div class="row">
+                            <!-- ====== portfolio item start ====== -->
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/portfolio/flutter.png" alt="Project 1">
+                                    </div>
+                                    <div class="portfolio-info">
+                                        <h3>GhostPeerShare</h3>
+                                        <p>Fully homomorphic end-to-end encrypted video sharing application ensuring privacy and security for users.</p>
+                                        <a href="https://github.com/MohammedMohiuddin1/GhostPeerShare" target="_blank" class="btn">Visit Project</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="certification-heading padd-15">
-                                    <h2>My Certifications :</h2>
+                            <!-- ====== portfolio item end ====== -->
+                            <!-- ====== portfolio item start ====== -->
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/portfolio/p2.webp" alt="Project 2">
+                                    </div>
+                                    <div class="portfolio-info">
+                                        <h3>Data Flow Cloud Web Application</h3>
+                                        <p>
+                                            Developed a cloud-based web application for seamless data management and efficient transfer.</p>
+                                        <a href="https://github.com/MohammedMohiuddin1/Cloud-Data-Flow-Web-Application" target="_blank" class="btn">Visit Project</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <!-- ====== certification item start ====== -->
-                                <div class="certification-item padd-15">
-                                    <div class="certification-item-inner">
-                                        <div class="icon">
-                                            <img
-                                                src="images/logos/Microsoft.png"
-                                                alt="Microsoft Logo"
-                                                class="cert-logo">
-                                        </div>
-                                        <h4>Microsoft Technology Associate: Java
-                                            Fundamentals</h4>
+                            <!-- ====== portfolio item end ====== -->
+                            <!-- ====== portfolio item start ====== -->
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/portfolio/p3.jpg" alt="Project 3">
+                                    </div>
+                                    <div class="portfolio-info">
+                                        <h3>AWS Backup Manager</h3>
+                                        <p>
+                                            Created a Python application leveraging AWS S3 and Boto3 for cloud-based backup and restore.</p>
+                                        <a href="https://github.com/MohammedMohiuddin1/AWS-Backup-Manager" target="_blank" class="btn">Visit Project</a>
                                     </div>
                                 </div>
-                                <!-- ====== certification item end ====== -->
-                                <!-- ====== certification item start ====== -->
-                                <div class="certification-item padd-15">
-                                    <div class="certification-item-inner">
-                                        <div class="icon">
-                                            <img
-                                                src="images/logos/Microsoft.png"
-                                                alt="Google Cloud Logo"
-                                                class="cert-logo">
-                                        </div>
-                                        <h4>Microsoft Technology Associate:
-                                            Software Development</h4>
+                            </div>
+                            <!-- ====== portfolio item end ====== -->
+                            <!-- ====== portfolio item start ====== -->
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/portfolio/p4.png" alt="Project 4">
+                                    </div>
+                                    <div class="portfolio-info">
+                                        <h3>Course Management System</h3>
+                                        <p>Complex CMS built on fundamental SOLID design principles, object-oriented programming for efficient management.</p>
+                                        <a href="https://github.com/MohammedMohiuddin1/Course-Management-System" target="_blank" class="btn">Visit Project</a>
                                     </div>
                                 </div>
-                                <!-- ====== certification item end ====== -->
-                                <!-- ====== certification item start ====== -->
-                                <div class="certification-item padd-15">
-                                    <div class="certification-item-inner">
-                                        <div class="icon">
-                                            <img
-                                                src="images/logos/Microsoft.png"
-                                                alt="Google Cloud Logo"
-                                                class="cert-logo">
-                                        </div>
-                                        <h4>Microsoft Technology Associate:
-                                            Azure Fundamentals</h4>
+                            </div>
+                            <!-- ====== portfolio item end ====== -->
+                            <!-- ====== portfolio item start ====== -->
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/portfolio/p5.jpeg" alt="Project 5">
+                                    </div>
+                                    <div class="portfolio-info">
+                                        <h3>Unix Shell</h3>
+                                        <p>A feature-rich Unix shell implemented in C, offering extensive functionality and user-friendly interface.</p>
+                                        <a href="https://github.com/MohammedMohiuddin1/Unix-Shell" target="_blank" class="btn">Visit Project</a>
                                     </div>
                                 </div>
-                                <!-- ====== certification item end ====== -->
-                                <!-- ====== certification item start ====== -->
-                                <div class="certification-item padd-15">
-                                    <div class="certification-item-inner">
-                                        <div class="icon">
-                                            <img src="images/logos/compTia.png"
-                                                alt="CompTIA Logo"
-                                                class="cert-logo">
-                                        </div>
-                                        <h4>CompTIA Security+</h4>
+                            </div>
+                            <!-- ====== portfolio item end ====== -->
+                            <!-- ====== portfolio item start ====== -->
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/portfolio/p6.png" alt="Project 6">
+                                    </div>
+                                    <div class="portfolio-info">
+                                        <h3>Multi-Threaded Sudoku Validator</h3>
+                                        <p>Multi-threaded program to validate and solve Sudoku puzzles using parallel processing techniques.</p>
+                                        <a href="https://github.com/MohammedMohiuddin1/Multi-Threaded-Sudoku-Validator" target="_blank" class="btn">Visit Project</a>
                                     </div>
                                 </div>
-                                <!-- ====== certification item end ====== -->
-                                <!-- ====== certification item start ====== -->
-                                <div class="certification-item padd-15">
-                                    <div class="certification-item-inner">
-                                        <div class="icon">
-                                            <img src="images/logos/Python.png"
-                                                alt="IBM Logo"
-                                                class="cert-logo">
-                                        </div>
-                                        <h4>Certified Python Developer</h4>
-                                    </div>
-                                </div>
-                                <!-- ====== certification item end ====== -->
-                                <!-- ====== certification item start ====== -->
-                                <div class="certification-item padd-15">
-                                    <div class="certification-item-inner">
-                                        <div class="icon">
-                                            <img src="images/logos/java.png"
-                                                alt="Oracle Logo"
-                                                class="cert-logo">
-                                        </div>
-                                        <h4>Certified Professional, Java SE</h4>
-                                    </div>
-                                </div>
-                                <!-- ====== certification item end ====== -->
-                                <!-- ====== certification item start ====== -->
-                                <div class="certification-item padd-15">
-                                    <div class="certification-item-inner">
-                                        <div class="icon">
-                                            <img
-                                                src="images/logos/Microsoft.png"
-                                                alt="Google Cloud Logo"
-                                                class="cert-logo">
-                                        </div>
-                                        <h4>Microsoft Technology Associate:
-                                            HTML & CSS</h4>
-                                    </div>
-                                </div>
-                                <!-- ====== certification item end ====== -->
-                                <!-- ====== certification item start ====== -->
-                                <div class="certification-item padd-15">
-                                    <div class="certification-item-inner">
-                                        <div class="icon">
-                                            <img
-                                                src="images/logos/Microsoft.png"
-                                                alt="Google Cloud Logo"
-                                                class="cert-logo">
-                                        </div>
-                                        <h4>Microsoft Technology Associate:
-                                            JavaScript</h4>
-                                    </div>
-                                </div>
-                                <!-- ====== certification item end ====== -->
-                                <!-- ====== certification item start ====== -->
-                                <div class="certification-item padd-15">
-                                    <div class="certification-item-inner">
-                                        <div class="icon">
-                                            <img src="images/logos/aws.png"
-                                                alt="AWS Logo"
-                                                class="cert-logo">
-                                        </div>
-                                        <h4>AWS Certified Cloud
-                                            Practitioner</h4>
-                                    </div>
-                                </div>
-                                <!-- ====== certification item end ====== -->
+                            </div>
+                            <!-- ====== portfolio item end ====== -->
+                        </div>
+                    </div>
+                </section>
+                <!-- ===== Portfolio Section End ==== -->
+                <!-- ===== Certification Section Start ==== -->
+                <section class="certification section" id="certifications">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title padd-15">
+                                <h2>Certifications</h2>
                             </div>
                         </div>
-                    </section>
-                    <!-- ===== Certification Section End ==== -->
-                    <!-- ===== Contact Us Section Start ==== -->
-                    <section class="contact section" id="contact">
-                        <div class="container">
-                            <div class="row">
-                                <div class="section-title padd-15">
-                                    <h2>Contact Me</h2>
-                                </div>
-                            </div>
-                            <h3 class="contact-title padd-15">Do You Have
-                                Questions
-                                ?</h3>
-                            <h4 class="contact-sub-title padd-15">I'M AT YOUR
-                                SERVICE</h4>
-                            <div class="row">
-                                <!-- ====== Contact info item start ====== -->
-                                <div class="contact-info-item padd-15">
-                                    <div class="icon"><i
-                                            class="fa fa-phone"></i></div>
-                                    <h4>Call Me On</h4>
-                                    <p>+1 425-324-4465</p>
-                                </div>
-                                <!-- ====== Contact info item end ====== -->
-                                <!-- ====== Contact info item start ====== -->
-                                <div class="contact-info-item padd-15">
-                                    <div class="icon"><i
-                                            class="fa fa-map-marker-alt"></i></div>
-                                    <h4>Office</h4>
-                                    <p>Bellevue</p>
-                                </div>
-                                <!-- ====== Contact info item end ====== -->
-                                <!-- ====== Contact info item start ====== -->
-                                <div class="contact-info-item padd-15">
-                                    <div class="icon"><i
-                                            class="fa fa-envelope"></i></div>
-                                    <h4>Email</h4>
-                                    <p>mmuzm786@gmail.com</p>
-                                </div>
-                                <!-- ====== Contact info item end ====== -->
-                                <!-- ====== Contact info item start ====== -->
-                                <div class="contact-info-item padd-15">
-                                    <div class="icon"><i
-                                            class="fa fa-globe-europe"></i></div>
-                                    <h4>Website</h4>
-                                    <p>mohammedmohiuddin.com</p>
-                                </div>
-                                <!-- ====== Contact info item end ====== -->
-                            </div>
-                            <h3 class="contact-title padd-15">SEND ME AN
-                                EMAIL</h3>
-                            <h4 class="contact-sub-title padd-15">I'LL TRY TO
-                                RESPOND ASAP</h4>
-                            <!-- ==== Contact Form ==== -->
-                            <div class="row">
-                                <div class="contact-form padd-15">
-                                    <form
-                                        action="https://formspree.io/f/xpwwkwwp"
-                                        method="POST">
-                                        <div class="row">
-                                            <div
-                                                class="form-item col-6 padd-15">
-                                                <div class="form-group">
-                                                    <input type="text"
-                                                        class="form-control"
-                                                        name="name"
-                                                        placeholder="Name"
-                                                        required>
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="form-item col-6 padd-15">
-                                                <div class="form-group">
-                                                    <input type="email"
-                                                        class="form-control"
-                                                        name="_replyto"
-                                                        placeholder="Email"
-                                                        required>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div
-                                                class="form-item col-12 padd-15">
-                                                <div class="form-group">
-                                                    <input type="text"
-                                                        class="form-control"
-                                                        name="subject"
-                                                        placeholder="Subject"
-                                                        required>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div
-                                                class="form-item col-12 padd-15">
-                                                <div class="form-group">
-                                                    <textarea
-                                                        class="form-control"
-                                                        name="message"
-                                                        placeholder="Message"
-                                                        required></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div
-                                                class="form-item col-12 padd-15">
-                                                <button type="submit"
-                                                    class="btn">Send
-                                                    Message</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
+                        <div class="row">
+                            <div class="certification-heading padd-15">
+                                <h2>My Certifications :</h2>
                             </div>
                         </div>
-                    </section>
-                    <!-- ===== Contact Us Section End ==== -->
-                </div>
-                <!-- ===== Main Content End ==== -->
+                        <div class="row">
+                            <!-- ====== certification item start ====== -->
+                            <div class="certification-item padd-15">
+                                <div class="certification-item-inner">
+                                    <div class="icon">
+                                        <img
+                                            src="images/logos/Microsoft.png"
+                                            alt="Microsoft Logo"
+                                            class="cert-logo">
+                                    </div>
+                                    <h4>Microsoft Technology Associate: Java
+                                        Fundamentals</h4>
+                                </div>
+                            </div>
+                            <!-- ====== certification item end ====== -->
+                            <!-- ====== certification item start ====== -->
+                            <div class="certification-item padd-15">
+                                <div class="certification-item-inner">
+                                    <div class="icon">
+                                        <img
+                                            src="images/logos/Microsoft.png"
+                                            alt="Microsoft Logo"
+                                            class="cert-logo">
+                                    </div>
+                                    <h4>Microsoft Technology Associate:
+                                        Software Development</h4>
+                                </div>
+                            </div>
+                            <!-- ====== certification item end ====== -->
+                            <!-- ====== certification item start ====== -->
+                            <div class="certification-item padd-15">
+                                <div class="certification-item-inner">
+                                    <div class="icon">
+                                        <img
+                                            src="images/logos/Microsoft.png"
+                                            alt="Microsoft Logo"
+                                            class="cert-logo">
+                                    </div>
+                                    <h4>Microsoft Technology Associate:
+                                        Azure Fundamentals</h4>
+                                </div>
+                            </div>
+                            <!-- ====== certification item end ====== -->
+                            <!-- ====== certification item start ====== -->
+                            <div class="certification-item padd-15">
+                                <div class="certification-item-inner">
+                                    <div class="icon">
+                                        <img src="images/logos/google-cloud.png"
+                                            alt="Google Cloud Logo"
+                                            class="cert-logo">
+                                    </div>
+                                    <h4>Google Cloud Cybersecurity</h4>
+                                </div>
+                            </div>
+                            <!-- ====== certification item end ====== -->
+                            <!-- ====== certification item start ====== -->
+                            <div class="certification-item padd-15">
+                                <div class="certification-item-inner">
+                                    <div class="icon">
+                                        <img src="images/logos/java.png"
+                                            alt="Oracle Logo"
+                                            class="cert-logo">
+                                    </div>
+                                    <h4>Certified Professional, Java SE</h4>
+                                </div>
+                            </div>
+                            <!-- ====== certification item end ====== -->
+                            <!-- ====== certification item start ====== -->
+                            <div class="certification-item padd-15">
+                                <div class="certification-item-inner">
+                                    <div class="icon">
+                                        <img
+                                            src="images/logos/Microsoft.png"
+                                            alt="Microsoft Logo"
+                                            class="cert-logo">
+                                    </div>
+                                    <h4>Microsoft Technology Associate:
+                                        HTML & CSS</h4>
+                                </div>
+                            </div>
+                            <!-- ====== certification item end ====== -->
+                            <!-- ====== certification item start ====== -->
+                            <div class="certification-item padd-15">
+                                <div class="certification-item-inner">
+                                    <div class="icon">
+                                        <img
+                                            src="images/logos/meta.png"
+                                            alt="Meta Logo"
+                                            class="cert-logo">
+                                    </div>
+                                    <h4>Meta Version Control</h4>
+                                </div>
+                            </div>
+                            <!-- ====== certification item end ====== -->
+                            <!-- ====== certification item start ====== -->
+                            <div class="certification-item padd-15">
+                                <div class="certification-item-inner">
+                                    <div class="icon">
+                                        <img
+                                            src="images/logos/react.png"
+                                            alt="React Logo"
+                                            class="cert-logo">
+                                    </div>
+                                    <h4>React Frontend Development</h4>
+                                </div>
+                            </div>
+                            <!-- ====== certification item end ====== -->
+                            <!-- ====== certification item start ====== -->
+                            <div class="certification-item padd-15">
+                                <div class="certification-item-inner">
+                                    <div class="icon">
+                                        <img src="images/logos/aws.png"
+                                            alt="AWS Logo"
+                                            class="cert-logo">
+                                    </div>
+                                    <h4>AWS Certified Cloud
+                                        Practitioner</h4>
+                                </div>
+                            </div>
+                            <!-- ====== certification item end ====== -->
+                        </div>
+                    </div>
+                </section>
+                <!-- ===== Certification Section End ==== -->
+                <!-- ===== Contact Us Section Start ==== -->
+                <section class="contact section" id="contact">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title padd-15">
+                                <h2>Contact Me</h2>
+                            </div>
+                        </div>
+                        <h3 class="contact-title padd-15">Do You Have
+                            Questions
+                            ?</h3>
+                        <h4 class="contact-sub-title padd-15">I'M AT YOUR
+                            SERVICE</h4>
+                        <div class="row">
+                            <!-- ====== Contact info item start ====== -->
+                            <div class="contact-info-item padd-15">
+                                <div class="icon"><i
+                                        class="fa fa-phone"></i></div>
+                                <h4>Call Me On</h4>
+                                <p>+1 425-324-4465</p>
+                            </div>
+                            <!-- ====== Contact info item end ====== -->
+                            <!-- ====== Contact info item start ====== -->
+                            <div class="contact-info-item padd-15">
+                                <div class="icon"><i
+                                        class="fa fa-map-marker-alt"></i></div>
+                                <h4>Office</h4>
+                                <p>Bellevue</p>
+                            </div>
+                            <!-- ====== Contact info item end ====== -->
+                            <!-- ====== Contact info item start ====== -->
+                            <div class="contact-info-item padd-15">
+                                <div class="icon"><i
+                                        class="fa fa-envelope"></i></div>
+                                <h4>Email</h4>
+                                <p>mmuzm786@gmail.com</p>
+                            </div>
+                            <!-- ====== Contact info item end ====== -->
+                            <!-- ====== Contact info item start ====== -->
+                            <div class="contact-info-item padd-15">
+                                <div class="icon"><i
+                                        class="fa fa-globe-europe"></i></div>
+                                <h4>Website</h4>
+                                <p>mohammedmohiuddin.com</p>
+                            </div>
+                            <!-- ====== Contact info item end ====== -->
+                        </div>
+                        <h3 class="contact-title padd-15">SEND ME AN
+                            EMAIL</h3>
+                        <h4 class="contact-sub-title padd-15">I'LL TRY TO
+                            RESPOND ASAP</h4>
+                        <!-- ==== Contact Form ==== -->
+                        <div class="row">
+                            <div class="contact-form padd-15">
+                                <form
+                                    action="https://formspree.io/f/xpwwkwwp"
+                                    method="POST">
+                                    <div class="row">
+                                        <div
+                                            class="form-item col-6 padd-15">
+                                            <div class="form-group">
+                                                <input type="text"
+                                                    class="form-control"
+                                                    name="name"
+                                                    placeholder="Name"
+                                                    required>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="form-item col-6 padd-15">
+                                            <div class="form-group">
+                                                <input type="email"
+                                                    class="form-control"
+                                                    name="_replyto"
+                                                    placeholder="Email"
+                                                    required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div
+                                            class="form-item col-12 padd-15">
+                                            <div class="form-group">
+                                                <input type="text"
+                                                    class="form-control"
+                                                    name="subject"
+                                                    placeholder="Subject"
+                                                    required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div
+                                            class="form-item col-12 padd-15">
+                                            <div class="form-group">
+                                                <textarea
+                                                    class="form-control"
+                                                    name="message"
+                                                    placeholder="Message"
+                                                    required></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div
+                                            class="form-item col-12 padd-15">
+                                            <button type="submit"
+                                                class="btn">Send
+                                                Message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ===== Contact Us Section End ==== -->
             </div>
-            <!-- ===== Main Container End ==== -->
-            <!-- ====== Style Switcher Start ====== -->
-            <div class="style-switcher">
-                <div class="style-switcher-toggler s-icon">
-                    <i class="fas fa-cog fa-spin"></i>
-                </div>
-                <div class="day-night s-icon">
-                    <i class="fas "></i>
-                </div>
-                <h4>Theme Colors</h4>
-                <div class="colors">
-                    <span class="color-1"
-                        onclick="setActiveStyle('color-1')"></span>
-                    <span class="color-2"
-                        onclick="setActiveStyle('color-2')"></span>
-                    <span class="color-3"
-                        onclick="setActiveStyle('color-3')"></span>
-                    <span class="color-4"
-                        onclick="setActiveStyle('color-4')"></span>
-                    <span class="color-5"
-                        onclick="setActiveStyle('color-5')"></span>
-                </div>
+            <!-- ===== Main Content End ==== -->
+        </div>
+        <!-- ===== Main Container End ==== -->
+        <!-- ====== Style Switcher Start ====== -->
+        <div class="style-switcher">
+            <div class="style-switcher-toggler s-icon">
+                <i class="fas fa-cog fa-spin"></i>
             </div>
-            <!-- ====== Style Switcher End ====== -->
-            <!-- ===== JS Files ==== -->
-            <script
-                src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
-                integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
-                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <script src="js/script.js"></script>
-            <script src="js/style-switcher.js"></script>
-        </body>
+            <div class="day-night s-icon">
+                <i class="fas "></i>
+            </div>
+            <div class="matrix-mode s-icon">
+                <i class="fas fa-terminal"></i>
+            </div>
+            <h4>Theme Colors</h4>
+            <div class="colors">
+                <span class="color-1"
+                    onclick="setActiveStyle('color-1')"></span>
+                <span class="color-2"
+                    onclick="setActiveStyle('color-2')"></span>
+                <span class="color-3"
+                    onclick="setActiveStyle('color-3')"></span>
+                <span class="color-4"
+                    onclick="setActiveStyle('color-4')"></span>
+                <span class="color-5"
+                    onclick="setActiveStyle('color-5')"></span>
+            </div>
+        </div>
+        <!-- ====== Style Switcher End ====== -->
+        <!-- ===== JS Files ==== -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+            integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="js/script.js"></script>
+        <script src="js/style-switcher.js"></script>
+    </body>
 
-    </html>
+</html>
