@@ -80,9 +80,24 @@
     border: 2px solid #00ff00;
 }
 
-
-
-
+/* Mobile adjustments for style switcher */
+@media only screen and (max-width: 767px) {
+    .style-switcher .style-switcher-toggler {
+        top: 65px;
+    }
+    
+    .style-switcher .day-night {
+        top: 120px;
+    }
+    
+    .style-switcher .matrix-mode {
+        top: 175px;
+    }
+    
+    .style-switcher {
+        top: 20px;
+    }
+}
 
 .style-switcher h4 {
     margin: 0 0 15px;
