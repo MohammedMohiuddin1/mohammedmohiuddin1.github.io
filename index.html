@@ -13,7 +13,7 @@
         </script>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, inital_scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <title>Mohammed Mohiuddin</title>
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96" />
@@ -166,6 +166,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="home-content-spacer"></div>
                         </div>
                     </div>
                 </section>
@@ -990,6 +991,30 @@
             <!-- ===== Main Content End ==== -->
         </div>
         <!-- ===== Main Container End ==== -->
+
+        <!-- ===== Footer Start ==== -->
+        <footer class="footer">
+            <div class="container">
+                <p class="copyright">
+                    &copy; <span id="current-year"></span> Mohammed Mohiuddin. All Rights Reserved.
+                </p>
+            </div>
+        </footer>
+        <!-- ===== Footer End ==== -->
+
+        <!-- ===== Cookie Consent Banner ==== -->
+        <div class="cookie-consent" id="cookie-consent">
+            <div class="cookie-text">
+                This website uses cookies to ensure you get the best experience on our website. 
+                <a href="#" id="cookie-policy">Learn more</a>
+            </div>
+            <div class="cookie-buttons">
+                <button class="cookie-btn decline-cookies" id="decline-cookies">Decline</button>
+                <button class="cookie-btn accept-cookies" id="accept-cookies">Accept</button>
+            </div>
+        </div>
+        <!-- ===== Cookie Consent Banner End ==== -->
+        
         <!-- ====== Style Switcher Start ====== -->
         <div class="style-switcher">
             <div class="style-switcher-toggler s-icon">
@@ -1023,6 +1048,51 @@
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="js/script.js"></script>
         <script src="js/style-switcher.js"></script>
+        
+        <!-- Cookie Consent and Footer Script -->
+        <script>
+            // Set current year in copyright
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            
+            // Cookie consent functionality
+            document.addEventListener('DOMContentLoaded', function() {
+                const cookieConsent = document.getElementById('cookie-consent');
+                const acceptBtn = document.getElementById('accept-cookies');
+                const declineBtn = document.getElementById('decline-cookies');
+                const policyLink = document.getElementById('cookie-policy');
+                
+                // Check if user has already made a choice
+                const cookieChoice = localStorage.getItem('cookieConsent');
+                
+                if (!cookieChoice) {
+                    // Show the banner after a short delay
+                    setTimeout(() => {
+                        cookieConsent.classList.add('show');
+                    }, 1000);
+                }
+                
+                // Accept cookies
+                acceptBtn.addEventListener('click', function() {
+                    localStorage.setItem('cookieConsent', 'accepted');
+                    cookieConsent.classList.remove('show');
+                    // Here you could initialize analytics or other cookie-based services
+                });
+                
+                // Decline cookies
+                declineBtn.addEventListener('click', function() {
+                    localStorage.setItem('cookieConsent', 'declined');
+                    cookieConsent.classList.remove('show');
+                    // Here you could ensure no tracking cookies are set
+                });
+                
+                // Policy link (placeholder)
+                policyLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    // You can replace this with a link to your actual cookie policy
+                    alert('Cookie Policy: This website uses cookies to enhance your browsing experience and provide personalized content.');
+                });
+            });
+        </script>
     </body>
 
 </html>
